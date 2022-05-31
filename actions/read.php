@@ -20,8 +20,8 @@ if ($result->num_rows > 0) {
     <td>' . $row["name"].'</td>
     <td>' . $row["message"].'</td>
     <td>' . $row["timestamp"].'</td>
-    <td><a class="btn btn-primary" onclick="update(' . $row["id"].')" role="button">Update</a>
-    <a class="btn btn-primary" onclick="del(' . $row["id"].')" role="button">Delete</a></td>
+    <td><a class="btn btn btn-warning" onclick="update(' . $row["id"].')" role="button">Update</a>
+    <a class="btn btn btn-danger" onclick="del(' . $row["id"].')" role="button">Delete</a></td>
   </tr>';
   }
 } else {
