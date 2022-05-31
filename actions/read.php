@@ -20,8 +20,10 @@ if ($result->num_rows > 0) {
     <td>' . $row["name"].'</td>
     <td>' . $row["message"].'</td>
     <td>' . $row["timestamp"].'</td>
-    <td><a class="btn btn btn-warning" onclick="update(' . $row["id"].')" role="button">Update</a>
-    <a class="btn btn btn-danger" onclick="del(' . $row["id"].')" role="button">Delete</a></td>
+    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+    <button type="button" onclick="update(' . $row["id"].')" class="btn btn-warning">Update</button>
+    <button type="button" onclick="del(' . $row["id"].')" class="btn btn-danger">Delete</button>
+  </div></td>
   </tr>';
   }
 } else {
