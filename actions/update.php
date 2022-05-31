@@ -38,8 +38,9 @@ $.ajax({
     data: form.serialize(), 
     success: function(data)
     {
-      read();
-      $( "#update" ).html(''); 
+      modal_distroy();
+      notification('Update', data)
+      read(); 
     }
 });
 });

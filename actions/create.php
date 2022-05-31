@@ -20,8 +20,9 @@ $.ajax({
     data: form.serialize(), 
     success: function(data)
     {
+      modal_distroy();
+      notification('Create', data)
       read();
-      $( "#create" ).html(''); 
     }
 });
 });
